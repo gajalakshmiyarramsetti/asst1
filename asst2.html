@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="C:\Users\Lakshmi\Desktop\SURE TRUST\assignment\astt2.css">
+    </head>
+    <body style="background-color: grey;" id="bodyy" >
+            <div class="container">
+                <header class="heading">FORM</header>
+                <form onsubmit="value()">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Type your name">
+                    </div>
+                    <div class="field">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="Type your title">
+                    </div>
+                    <div class="field">
+                        <label for="content">Content</label>
+                        <textarea cols="41" rows="2" placeholder="Type your content" name="content" id="content"></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="author">Author Name</label>
+                        <input type="text" name="author" id="author" placeholder="Type author name">
+                    </div>
+                    <div class="field">
+                        <span><label for="date">Date</label>
+                        <input type="date" name="date" id="date"><br><br>
+                        </span>
+                        <span>
+                            <label for="time">Time</label>
+                            <input type="time" name="time" id="time">
+                        </span>
+                    </div>
+                    <input type="submit" class="btn"  value="SUBMIT" name="">
+                </form>
+            </div>
+            <script>
+                function value(){
+    var name=document.getElementById("name").value;
+    var title=document.getElementById("title").value;
+    var content=document.getElementById("content").value;
+    var author=document.getElementById("author").value;
+    var date=document.getElementById("date").value;
+    var time=document.getElementById("time").value;
+    let color = document.body.style.backgroundColor;
+    document.getElementById("name").innerHTML = color;
+    document.write("Name       :" + name + "<br>");
+    document.write("Title      :" + title + "<br>");
+    document.write("Content    :" + content + "<br>");
+    document.write("AuthorName :" + author + "<br>");
+    document.write("Date       :" + date + "<br>");
+    document.write("Time       :" + time + "<br>");
+}
+            </script>
+    </body>
+</html>
